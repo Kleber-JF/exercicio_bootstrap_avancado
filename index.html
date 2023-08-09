@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC - M13 - Exercício</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header {
+            position: sticky; 
+            top: 0;
+            left: 0;
+            z-index: 3;
+            overflow: hidden;
+            background-color: rgb(123, 185, 121);            
+        }
+
+        .carousel-inner img {
+            max-height: 600px;
+        }
+
+        #fotos, #produtos {
+            padding-top: 70px; 
+        }
+
+        #produtos h4 {
+            padding: 8px 0;
+        }
+
+        #cartao {
+            padding-top: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>EBAC Bootstrap</h1>
+                <button type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#fotos">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="fotos">
+        <div class="container">
+            <h2>Fotos</h2>
+            <div id="carousel-imagens" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/08/03/14/14/night-8167272_1280.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Câmeras</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/25/19/47/milky-way-8149815_1280.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Telescópios</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/20/12/55/field-8139258_1280.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Tranquilidade para sua casa</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/25/02/00/terraces-8148062_1280.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Alimentos 100% orgânicos</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-imagens" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-imagens" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-imagens" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section id="produtos">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="row">                
+                <div id="cartao" class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/100x100" />
+                        <div class="card-body">
+                            <h3 class="card-title">Nome do produto</h3>
+                            <h4 class="card-subtitle h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum eligendi sunt laboriosam.</h4>
+                            <p class="card-text">
+                                De <del>R$ 1.000,00</del> por R$ 500,00
+                            </p>
+                            <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cartao" class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/100x100" />
+                        <div class="card-body">
+                            <h3 class="card-title">Nome do produto</h3>
+                            <h4 class="card-subtitle h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex nihil dolorem nulla eaque volupt.</h4>
+                            <p class="card-text">
+                                Por R$ 699,99
+                            </p>
+                            <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cartao" class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/100x100" />
+                        <div class="card-body">
+                            <h3 class="card-title">Nome do produto</h3>
+                            <h4 class="card-subtitle h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos aut laboriosam maxime.</h4>
+                            <p class="card-text">
+                                Por R$ 879,90
+                            </p>
+                            <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>                                    
+            </div>
+    </section>
+</div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
